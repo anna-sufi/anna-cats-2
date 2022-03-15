@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить котика</title>
+    <link rel="icon" href="cat_logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="add_h1">Добавить котика</h1>
+    <h2 class="add_h2">Заполните данные:</h2>
+    <form id="addCat_form">
+        <label>Идентификатор: </label>
+        <input class="inp" type="number" name="id" placeholder="id" min="0" required>
+        <label>Имя котика: </label>
+        <input class="inp" type="text" name="name" placeholder="Введите имя котика" required>
+        <label>Возраст: </label>
+        <input class="inp" type="number" name="age" placeholder="Введите возраст" min="0">
+        <label>Рейтинг: </label>
+        <input class="inp" type="number" name="rate" placeholder="Введите рейтинг от 0 до 10" min="0" max="10">
+        <label><input class="inp" type="checkbox" name="favourite" value="true">Фаворит</label>
+        <label>Фото котика: </label>
+        <input class="inp" type="text" name="img_link" placeholder="Ссылка на фото">
+        <label>О котике: </label>
+        <textarea class="inp" name="description" placeholder="Описание" rows="3"></textarea>
+        <button id="form_btn_add" type="submit">Добавить котика</button>
+        <a class="back_link" href="index.html">
+            <button id="form_btn_back" type="button">На главную</button>
+             </a>
+    </form>
+
+    
+    <script src = "script3.js"></script>   
+</body>
+</html>
