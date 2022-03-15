@@ -64,6 +64,7 @@ function SendChanges(body) { // создаем функцию отправки �
         .then(data => {
             console.log(data);
             alert("Изменения сохранены!");
+            location.reload();
         });
     }
 // Нажали кнопку  "Сохранить"
@@ -94,5 +95,4 @@ function saveChanges() {
     about_form.elements[5].setAttribute("disabled", "disabled");
     btn_save.setAttribute("disabled", "disabled");
     
-    location.reload();
 }
